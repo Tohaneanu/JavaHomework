@@ -10,8 +10,11 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class Rent {
-    Person person;
-    Vehicle vehicle;
-    LocalDate startRantTime;
+    int id;
+    LocalDate startRentTime;
     LocalDate endRentTime;
+    double kilometers;
+    int pin;
+    String registrationNumber;
+
 }

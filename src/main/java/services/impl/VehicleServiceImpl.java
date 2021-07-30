@@ -21,6 +21,11 @@ public class VehicleServiceImpl implements VehicleService {
 
 
     @Override
+    public List<Vehicle> viewAll() {
+     return vehicles;
+    }
+
+    @Override
     public List<Vehicle> viewVehicleInChronologicalOrder() {
 //        int n = vehicles.size();
 //        for (int i = 0; i < n-1; i++)
@@ -58,6 +63,13 @@ public class VehicleServiceImpl implements VehicleService {
 
     @Override
     public List<Vehicle> vehicleByType(TypeOfVehicle tp) {
+//                int n=vehicles.size();
+//        List<Vehicle> result=new ArrayList<>();
+//        for (int i=0;i<n;i++){
+//            if (vehicles.get(i).getType().equals(tp))
+//                result.add(vehicles.get(i));
+//        }
+//        return result;
         return vehicles.stream().filter(v->v.getType().equals(tp)).collect(Collectors.toList());
     }
 }

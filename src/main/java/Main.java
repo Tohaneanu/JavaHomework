@@ -1,3 +1,4 @@
+import repository.VehicleRepository;
 import services.impl.VehicleServiceImpl;
 import models.Vehicle;
 import commons.TypeOfVehicle;
@@ -21,5 +22,9 @@ public class Main {
         List<Vehicle> vehicleByType = vehicleController.vehicleByType(TypeOfVehicle.CAR);
         System.out.println();
         vehicleByType.forEach(System.out::println);
+
+        System.out.println();System.out.println();
+        List<Vehicle> vehicles=new VehicleRepository().readVehicles();
+        vehicles.forEach(System.out::println);
     }
 }
