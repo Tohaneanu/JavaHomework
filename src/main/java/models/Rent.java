@@ -3,7 +3,8 @@ package models;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import otherClasses.Date;
+
+import java.time.LocalDate;
 
 @AllArgsConstructor
 @Getter
@@ -11,6 +12,6 @@ import otherClasses.Date;
 public class Rent {
     Person person;
     Vehicle vehicle;
-    Date startRantTime;
-    Date endRentTime;
+    LocalDate startRantTime;
+    LocalDate endRentTime;
 }

@@ -3,7 +3,8 @@ package models;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import otherClasses.Date;
+
+import java.time.LocalDate;
 
 
 @Getter
@@ -13,8 +14,8 @@ public class Person {
     int pin;
     String firstName;
     String lastName;
-    Date birthday;
+    LocalDate birthday;
     char gender;
-    Date issuingYearOfDrivingLicense;
+    LocalDate issuingYearOfDrivingLicense;
 
 }

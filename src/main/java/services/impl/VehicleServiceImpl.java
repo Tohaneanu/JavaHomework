@@ -1,16 +1,14 @@
-package controllers;
+package services.impl;
 
-import otherClasses.Date;
-import services.VehicleBehavior;
 import models.Vehicle;
-import otherClasses.TypeOfVehicle;
+import commons.TypeOfVehicle;
+import services.VehicleService;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class VehicleController implements VehicleBehavior {
+public class VehicleServiceImpl implements VehicleService {
     private final List<Vehicle> vehicles=new ArrayList<>();
 
 

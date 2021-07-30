@@ -1,6 +1,6 @@
-import controllers.VehicleController;
+import services.impl.VehicleServiceImpl;
 import models.Vehicle;
-import otherClasses.TypeOfVehicle;
+import commons.TypeOfVehicle;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        VehicleController vehicleController=new VehicleController();
+        VehicleServiceImpl vehicleController=new VehicleServiceImpl();
         vehicleController.init();
         List<Vehicle> viewVehicleInChronologicalOrder = vehicleController.viewVehicleInChronologicalOrder();
         viewVehicleInChronologicalOrder.forEach(System.out::println);
