@@ -1,7 +1,7 @@
-package services;
+package example.services;
 
-import commons.TypeOfVehicle;
-import models.Vehicle;
+import example.commons.TypeOfVehicle;
+import example.models.Vehicle;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package commons;
+package example.commons;
 
 
 public  enum TypeOfVehicle {

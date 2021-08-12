@@ -1,22 +1,24 @@
-package services.impl;
+package example.services.impl;
 
-import models.Vehicle;
-import commons.TypeOfVehicle;
-import services.VehicleService;
+import example.commons.TypeOfVehicle;
+import example.models.Vehicle;
+import example.repository.VehicleRepository;
+import example.services.VehicleService;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class VehicleServiceImpl implements VehicleService {
-    private final List<Vehicle> vehicles=new ArrayList<>();
+    private List<Vehicle> vehicles=new ArrayList<>();
 
 
-    public void init(){
-        vehicles.add(new Vehicle("BV07TAD",TypeOfVehicle.CAR,2018,"BMW","Black"));
-        vehicles.add(new Vehicle("B100MNT",TypeOfVehicle.CAR,2000,"DACIA","Red"));
-        vehicles.add(new Vehicle("SB24AIS",TypeOfVehicle.TRUCK,2020,"SKODA","Black"));
-        vehicles.add(new Vehicle("BV75KES",TypeOfVehicle.CAR,2016,"VOLVO","Green"));
+    public VehicleServiceImpl(){
+//        vehicles.add(new Vehicle("BV07TAD",TypeOfVehicle.CAR,2018,"BMW","Black"));
+//        vehicles.add(new Vehicle("B100MNT",TypeOfVehicle.CAR,2000,"DACIA","Red"));
+//        vehicles.add(new Vehicle("SB24AIS",TypeOfVehicle.TRUCK,2020,"SKODA","Black"));
+//        vehicles.add(new Vehicle("BV75KES",TypeOfVehicle.CAR,2016,"VOLVO","Green"));
+        vehicles=new VehicleRepository().readVehicles();
     }
 
 

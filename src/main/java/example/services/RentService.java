@@ -1,7 +1,7 @@
-package services;
+package example.services;
 
-import models.Person;
-import models.Rent;
+import example.models.Person;
+import example.models.Rent;
 
 import java.util.List;
 

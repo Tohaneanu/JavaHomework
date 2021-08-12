@@ -1,6 +1,6 @@
-package services;
+package example.services;
 
-import models.Rent;
+import example.models.Rent;
 
 public interface PersonService {
     Rent rentVehicle();
